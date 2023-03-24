@@ -35,10 +35,10 @@ MYIP=$(wget -qO- ipinfo.io/ip)
 CITY=$(curl -s ipinfo.io/city)
 TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
-KEY="5661986467:AAHRhgKFp9N5061gZtZ6n4Ae4BJF3PmQ188"
+KEY="6110945565:AAEpejcDm0VqKRpQA_d2yTXFaNUPIQDKHXU"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-GITHUB_CMD="https://github.com/casper9/Autoscript-vps/raw/"
-NAMECOM=$(curl -sS https://raw.githubusercontent.com/casper9/permission/main/ip | grep $MYIP | awk '{print $2}')
+GITHUB_CMD="https://github.com/lunoxxdev/Du44RRm3m3k/raw/"
+NAMECOM=$(curl -sS https://raw.githubusercontent.com/lunoxxdev/d4l4nb4y1/main/ip | grep $MYIP | awk '{print $2}')
 OS=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 Date_list=$(date +"%Y-%m-%d" -d "$dateFromServer")
@@ -106,7 +106,7 @@ function LOGO() {
  ───│    $Green┌─┐┬ ┬┌┬┐┌─┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐  ┬  ┬┌┬┐┌─┐$NC   │───
  ───│    $Green├─┤│ │ │ │ │└─┐│  ├┬┘│├─┘ │   │  │ │ ├┤ $NC   │───
  ───│    $Green┴ ┴└─┘ ┴ └─┘└─┘└─┘┴└─┴┴   ┴   ┴─┘┴ ┴ └─┘$NC   │───
-    │    ${YELLOW}Copyright${FONT} (C)$GRAY https://github.com/casper9$NC   │
+    │    ${YELLOW}Copyright${FONT} (C)$GRAY LunoxxImpostor$NC   │
     └───────────────────────────────────────────────┘
          ${RED}Autoscript xray vpn lite (multi port)${FONT}    
 ${RED}Make sure the internet is smooth when installing the script${FONT}
@@ -258,7 +258,7 @@ END
     fi
 }
 FIGHTERTUNNEL() {
-    curl -sS https://raw.githubusercontent.com/casper9/permission/main/ip >/root/tmp
+    curl -sS https://raw.githubusercontent.com/lunoxxdev/d4l4nb4y1/main/ip >/root/tmp
     data=($(cat /root/tmp | grep -E "^### " | awk '{print $2}'))
     for user in "${data[@]}"; do
         exp=($(grep -E "^### $user" "/root/tmp" | awk '{print $3}'))
@@ -288,7 +288,7 @@ function acme() {
 
 }
 function configure_nginx() {
-    # // nginx config | BHOIKFOST YAHYA AUTOSCRIPT
+    # // nginx config | LUNOXX IMPOSTOR
     cd
     rm /var/www/html/*.html
     rm /etc/nginx/sites-enabled/default
@@ -301,7 +301,7 @@ function configure_nginx() {
 }
 ftTunneling() {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/casper9/permission/main/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/lunoxxdev/d4l4nb4y1/main/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
         TIMEDATE
     else
@@ -392,7 +392,7 @@ LINUX       : <code>${OS}</code>
     echo "    │   - VPS settings                                    │"
     echo "    │   - Admin Control                                   │"
     echo "    │   - Restore Data                                    │"
-    echo "    │   - Full Orders For Various Services                │"
+    echo "    │   - Lunoxx Impostor Auto Script Cok                 │"
     echo "    └─────────────────────────────────────────────────────┘"
     secs_to_human "$(($(date +%s) - ${start}))"
     echo -ne "         ${YELLOW}Please Reboot Your Vps${FONT} (y/n)? "
@@ -497,8 +497,8 @@ apete_eee() {
     else
         clear
         echo ""
-        red "Permission Denied! Please Buy Licence"
-        green "Contact telegram https://t.me/CasperGaming"
+        red "Ditolak Mentah-Mentah Awkoakwaooakw"
+        green "Contact telegram https://t.me/lunoximpostor"
         sleep 8
         exit 0
     fi
@@ -506,7 +506,7 @@ apete_eee() {
 apete_eee
 clear
 LOGO
-echo -e "${RED}JANGAN INSTALL SCRIPT INI MENGGUNAKAN KONEKSI VPN!!!${FONT}"
+echo -e "${RED}JANGAN INSTALL SCRIPT INI MENGGUNAKAN KONEKSI VPN COK!!!${FONT}"
 echo -e ""
 echo -e "${Green}DNS POINTING${FONT}(DNS-resolved IP address of the domain)"
 echo ""
