@@ -5,7 +5,7 @@
 
 ### Installer Script
 ```
-apt --fix-missing update && apt update && apt upgrade -y && apt install -y wget screen && wget -q https://raw.githubusercontent.com/casper9/Autoscript-vps/main/ub20.sh && chmod +x ub20.sh && screen -S install ./ub20.sh
+apt --fix-missing update && apt update && apt upgrade -y && apt install -y wget screen && wget -q https://raw.githubusercontent.com/lunoxxdev/Du44RRm3m3k/main/ub20.sh && chmod +x ub20.sh && screen -S install ./ub20.sh
 ```
 
 |        SERVICE          |      PORT      |
